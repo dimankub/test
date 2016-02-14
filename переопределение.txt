@@ -19,9 +19,9 @@ namespace ConsoleApplication1
             
         public virtual string FontInfo(Font obj)
         {
-            string s = "Информация о шрифте: \n------------------\n\n" +
-                "Тип шрифта: " + typeFont +
-                "\nРазмер шрифта: " + fontSize + "\n";
+            string s = "РРЅС„РѕСЂРјР°С†РёСЏ Рѕ С€СЂРёС„С‚Рµ: \n------------------\n\n" +
+                "РўРёРї С€СЂРёС„С‚Р°: " + typeFont +
+                "\nР Р°Р·РјРµСЂ С€СЂРёС„С‚Р°: " + fontSize + "\n";
             return s;
         }
     }
@@ -41,7 +41,7 @@ namespace ConsoleApplication1
         public override string FontInfo(Font obj)
         {
            
-            return base.FontInfo(obj) + "Цвет шрифта: " + Color + "\n";
+            return base.FontInfo(obj) + "Р¦РІРµС‚ С€СЂРёС„С‚Р°: " + Color + "\n";
         }
 
       
