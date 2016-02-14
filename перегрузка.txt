@@ -9,22 +9,22 @@ namespace ConsoleApplication1
     {
         public void ui()
         {
-            Console.WriteLine("Пустой метод\n");
+            Console.WriteLine("РџСѓСЃС‚РѕР№ РјРµС‚РѕРґ\n");
         }
 
         public void ui(string Name)
         {
-            Console.WriteLine("Имя : {0}",Name);
+            Console.WriteLine("РРјСЏ : {0}",Name);
         }
 
         public void ui(string Name, string Family)
         {
-            Console.WriteLine("Имя : {0}\nФамилия : {1}",Name,Family);
+            Console.WriteLine("РРјСЏ : {0}\nР¤Р°РјРёР»РёСЏ : {1}",Name,Family);
         }
 
         public void ui(string Name, string Family, byte Age)
         {
-            Console.WriteLine("Имя : {0}\nФамилия : {1}\nВозраст: {2}", Name, Family, Age);
+            Console.WriteLine("РРјСЏ : {0}\nР¤Р°РјРёР»РёСЏ : {1}\nР’РѕР·СЂР°СЃС‚: {2}", Name, Family, Age);
         }
     }
 
@@ -34,7 +34,7 @@ namespace ConsoleApplication1
         {
             UserInfo user1 = new UserInfo();
             user1.ui();
-            user1.ui("Кубрин", "Дмитрий", 20);
+            user1.ui("РљСѓР±СЂРёРЅ", "Р”РјРёС‚СЂРёР№", 20);
 
             Console.ReadLine();
         }
