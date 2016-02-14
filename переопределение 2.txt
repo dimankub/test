@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication3
+{
+class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public Person(string name, int age)
+    {
+        Name = name;
+        Age = age;
+    }
+    public virtual void ShowInfo() //объявление виртуального метода
+    {
+        Console.WriteLine("Человек\nИмя: " + Name + "\n" + "Возраст: " + Age + "\n");
+    }
+}
+class Student : Person
+{
+    public string HighSchoolName { get; set; }
+
+   public Student(string name, int age, string hsName)
+: base(name, age)
+   {
+     HighSchoolName = hsName;
+   }
+   public override void ShowInfo() // переопределение метода
+   {
+     Console.WriteLine("Студент\nИмя: " + Name + "\n" + "Возраст: " + Age +"\n"+ "Название ВУЗа: " + HighSchoolName + "\n"); 
+   }
+}
+class Program
+{
+
+   static void Main(string[] args)
+   {
+     List<Person> persons = new List<Person>();
+     persons.Add(new Person("Дмитрий", 20));
+     persons.Add(new Student("Сергей", 21, "МАИ"));
+     Console.ReadKey();
+   }
+}
+}

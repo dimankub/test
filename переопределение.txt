@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Font
+    {
+        string TypeFont;
+        short FontSize;
+
+        public Font() 
+        { 
+            TypeFont = "Arial";
+            FontSize = 12;
+        }
+
+            
+        public virtual string FontInfo(Font obj)
+        {
+            string s = "ָםפמנלאצטÿ מ רנטפעו: \n------------------\n\n" +
+                "ׂטן רנטפעא: " + typeFont +
+                "\n׀אחלונ רנטפעא: " + fontSize + "\n";
+            return s;
+        }
+    }
+
+   
+    class ColorFont : Font
+    {
+        byte Color;
+
+        public ColorFont(byte Color, string TypeFont, short FontSize)
+            : base(TypeFont, FontSize)
+        {
+            this.Color = Color;
+        }
+
+ 
+        public override string FontInfo(Font obj)
+        {
+           
+            return base.FontInfo(obj) + "ײגוע רנטפעא: " + Color + "\n";
+        }
+
+      
+    class Program
+    {
+        static void Main()
+        {
+            ColorFont font1 = new ColorFont(Color: Red, TypeFont: "Arial", FontSize: 12);
+            Console.WriteLine(font1.FontInfo(font1));
+
+            Console.ReadLine();
+        }
+    }
+}
