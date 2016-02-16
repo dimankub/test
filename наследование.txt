@@ -1,0 +1,38 @@
+public class CoOrds
+{
+    private int x, y;
+
+    public CoOrds()  // constructor
+    {
+        x = 0;
+        y = 0;
+    }
+
+    public int X
+    {
+        get { return x; }
+        set { x = value; }
+    }
+
+    public int Y
+    {
+        get { return y; }
+        set { y = value; }
+    }
+}
+public class ColorCoOrds : CoOrds
+{
+    private System.Drawing.Color screenColor;
+
+
+    public ColorCoOrds()  // constructor
+    {
+        screenColor = System.Drawing.Color.Red;
+    }
+
+    public System.Drawing.Color ScreenColor
+    {
+        get { return screenColor; }
+        set { screenColor = value; }
+    }
+}
