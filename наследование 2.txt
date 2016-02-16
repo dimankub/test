@@ -1,0 +1,30 @@
+class Animal
+{
+   public string Name { get; set; }
+}
+class Dog : Animal
+{
+   public void Guard()
+   {
+     // собака охраняет
+   }
+}
+class Cat : Animal
+{
+   public void CatchMouse()
+   {
+     // кошка ловит мышь
+   } 
+}
+class Program
+{ 
+  static void Main(string[] args)
+   {
+     Dog dog1 = new Dog();
+     dog1.Name = "Барбос"; // называем пса
+     Cat cat1 = new Cat();
+     cat1.Name = "Барсик"; // называем кота
+     dog1.Guard(); // отправляем пса охранять
+     cat1.CatchMouse(); // отправляем кота на охоту 
+   } 
+}
